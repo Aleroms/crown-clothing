@@ -20,7 +20,7 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  console.log(formFields);
+  //console.log(formFields);
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -57,7 +57,7 @@ const SignUpForm = () => {
   };
   return (
     <div className="sign-up-container">
-      <h2>Don't have an account?</h2>
+      <h2>I do not have an account?</h2>
       <span>sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
