@@ -11,7 +11,7 @@ export const CategoriesProvider = ({ children }) => {
     //any async stuff in a useEffect should be in its own async func
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
-      console.log(categoryMap);
+
       setCategoriesMap(categoryMap);
     };
     //then invoke it
