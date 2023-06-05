@@ -1,6 +1,4 @@
-export const USER_ACTION_TYPES = {
-  SET_CURRENT_USER: "SET_CURRENT_USER",
-};
+import { USER_ACTION_TYPES } from "./user.types";
 
 const INITIAL_STATE = {
   currentUser: null,
@@ -15,8 +13,8 @@ export const userReducer = (state = INITIAL_STATE, action) => {
         ...state,
         currentUser: payload,
       };
-      //default returns the state which is not modified which will
-      //not modify the reducer in rerenders
+    //default returns the state which is not modified which will
+    //not modify the reducer in rerenders
     default:
       return state;
   }
